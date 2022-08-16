@@ -15,7 +15,7 @@ document.getElementById("submit_btn").addEventListener("click", function () {
   const password = password_field.value;
   // Danger : this is not the right way to verify an user info but as a begginer we do this
   // step 4 : verify email and password
-  if (email === "mezanurr009@gmail.com" && password === "RaHMaN$2002$") {
+  if (email === "baper@bank.com" && password === "bapKaBeta") {
     window.location.href = "bank.html";
   } else {
     alert("Sorry Sir!!! You put a wrong email or password.");
