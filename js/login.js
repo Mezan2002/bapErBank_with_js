@@ -13,6 +13,12 @@ document.getElementById("submit_btn").addEventListener("click", function () {
   // step 3.3 : call the email field with .value and put the value on a new variable
   const password_field = document.getElementById("user_password");
   const password = password_field.value;
+  // if no input
+  if (email === "" && password === "") {
+    alert("Please enter a email and password to login!!!");
+    return;
+  }
+
   // Danger : this is not the right way to verify an user info but as a begginer we do this
   // step 4 : verify email and password
   if (email === "baper@bank.com" && password === "bapKaBeta") {
