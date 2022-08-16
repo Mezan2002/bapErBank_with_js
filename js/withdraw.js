@@ -8,6 +8,7 @@ document.getElementById("withdraw_btn").addEventListener("click", function () {
   //   step 7 : clear the input field after the operation
   withdrawInput.value = "";
   const newWithdrawValue = parseFloat(newWithdrawValueString);
+  //   step extra 2 : if the input is not a number
   if (isNaN(newWithdrawValue)) {
     alert("Sir, Please put the amount number of your withdraw!!");
     return;

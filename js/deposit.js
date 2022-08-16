@@ -4,6 +4,11 @@ document.getElementById("deposit_btn").addEventListener("click", function () {
   const depositInput = document.getElementById("deposit_input");
   const depositAddString = depositInput.value;
   const newDepositAdd = parseFloat(depositAddString);
+  // step extra : if the input is not a number
+  if (isNaN(newDepositAdd)) {
+    alert("Sir, Please put the amount number of your deposit!!");
+    return;
+  }
   //   step 3 : get the deposit count
   const depositCount = document.getElementById("deposit_count");
   const previousDepositCountAmountString = depositCount.innerText;
